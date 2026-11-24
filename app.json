@@ -1,15 +1,17 @@
 {
   "expo": {
-    "name": "study-planner",
+    "name": "Study Planner",
     "slug": "study-planner",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "io.github.mrakgg.studyplanner",
+      "versionCode": 1,
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -20,6 +22,26 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FBFCFF",
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 160,
+          "dark": {
+            "backgroundColor": "#17332D",
+            "image": "./assets/splash-icon.png"
+          }
+        }
+      ]
+    ],
+    "scheme": "studyplanner",
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }
